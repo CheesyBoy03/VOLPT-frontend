@@ -1,0 +1,68 @@
+@import 'for_all.sass'
+    
+header
+    background-color: $mainColor
+    .header-logo
+        a
+            padding: 10px 0
+            color: $activeColor
+            font-family: 'Press Start 2P', cursive
+            font-size: 2em
+    .burger-menu
+        display: none
+        justify-content: center
+        align-items: center
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        font-size: 1.3em
+        background-color: $activeColor
+        @media screen and ( max-width: 800px )
+            display: flex
+    .header-section
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @include blockCentering()
+        height: 80px
+        .links
+            width: 40%
+            display: flex
+            justify-content: space-between
+            @media screen and ( max-width: 1024px )
+                width: 40%
+            @media screen and ( max-width: 800px )
+                display: none
+            .link
+                padding: 10px 0
+                &:hover
+                    padding: 10px 0 8px
+                    border-bottom: 2px solid $activeColor
+            .sign-in
+                padding: 10px 20px
+                border-radius: 50px
+                background-color: $activeColor
+                &:hover
+                    background-color: #2d9ccc
+                    transition: 0.3s
+            @media screen and ( min-width: 1440px )
+                width: 30%
+        .topnav
+            width: 100%
+            position: absolute
+            top: 80px
+            right: 0
+            display: flex
+            flex-direction: column
+            background-color: $mainColor
+            padding: 10px 30px
+            .link
+                &::last-child
+                    border-top: 1px solid $activeColor
+                &:hover
+                    border-bottom: none
+            .sign-in
+                text-align: center
+                margin: 10px 0 
+        @media screen and ( max-width: 1000px )
+            @include mobileBlogCentering()
