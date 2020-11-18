@@ -1,0 +1,20 @@
+.timetable-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.timetable-container .timetable-block {
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+}
+.timetable-container .timetable-block .block-header {
+  border-radius: 10px 10px 0 0;
+  background-color: #0D1321;
+  color: #f4f4f4;
+  height: 50px;
+  padding: 10px 0 0 20px;
+}
+.timetable-container .timetable-block .subject {
+  background-color: #f4f4f4;
+}
