@@ -4,8 +4,9 @@ $contentColor: #7293B1
 $activeColor: #34AADC
 $fontContentColor: #1a1919
 
+
 //      MIXINS FOR HEADER
-@mixin blockCentering()
+@mixin BlockCentering()
     width: 70%
     max-width: 1300px
     margin: auto
@@ -13,7 +14,32 @@ $fontContentColor: #1a1919
         width: 90%
         margin: auto
 
-@mixin mobileBlogCentering()
+@mixin MobileBlogCentering()
     width: 90%
     margin: auto
 
+@mixin BlockHeader()
+    display: flex
+    align-items: center
+    padding-left: 30px
+    border-radius: 10px 10px 0 0 
+    background-color: $mainColor
+    color: $fontHeaderColor
+    min-height: 60px
+    font-size: 2em
+    @media screen and ( max-width: 500px )
+        font-size: 1.6em
+
+@mixin BlockContent()
+    padding: 10px 40px 20px
+    min-height: 150px
+    border-radius: 0 0 10px 10px
+    background-color: $fontHeaderColor
+    font-size: 20px
+    @media screen and ( max-width: 500px )
+        font-size: 1.1em
+//      MIXINS FOR HEADER
+
+
+body
+    background-color: $contentColor

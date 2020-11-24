@@ -1,3 +1,7 @@
+body {
+  background-color: #7293B1;
+}
+
 header {
   background-color: #0D1321;
   color: #f4f4f4;
@@ -16,7 +20,8 @@ header .burger-menu {
   height: 35px;
   border-radius: 50%;
   font-size: 1.3em;
-  background-color: #34AADC;
+  border: 1px solid #34AADC;
+  color: #f4f4f4;
 }
 @media screen and (max-width: 800px) {
   header .burger-menu {

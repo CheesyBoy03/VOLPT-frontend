@@ -17,14 +17,15 @@ header
         height: 35px
         border-radius: 50%
         font-size: 1.3em
-        background-color: $activeColor
+        border: 1px solid $activeColor
+        color: #f4f4f4
         @media screen and ( max-width: 800px )
             display: flex
     .header-section
         display: flex
         justify-content: space-between
         align-items: center
-        @include blockCentering()
+        @include BlockCentering()
         height: 80px
         .links
             width: 40%
@@ -68,4 +69,4 @@ header
                 text-align: center
                 margin: 10px 0 
         @media screen and ( max-width: 1000px )
-            @include mobileBlogCentering()
+            @include MobileBlogCentering()

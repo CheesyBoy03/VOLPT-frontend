@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Задания</title>
-    <link rel="stylesheet" href="styles/dist/reset.css">
-    <link rel="stylesheet" href="styles/dist/header.css">
-    <link rel="stylesheet" href="styles/dist/content.css">
-    <link rel="stylesheet" href="style/dist/todo.css">
+    <link rel="stylesheet" type="text/css" href="styles/dist/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/dist/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/dist/content.css">
+    <link rel="stylesheet" type="text/css" href="styles/dist/todo.css">
     <script src="js/dist/menu.dev.js"></script>
 </head>
 <body>
@@ -31,8 +31,81 @@
 
     <div class="content">
         <div class="content-container">
-            <h1>todo</h1>
+            <div class="block-with-task">
+                <div class="block-header">Имя Фамилия</div>
+                <div class="todo">
+                    <div class="todo-container">
+                        <div class="subject">Математика</div>
+                        <div class="tasks">
+                            <div class="task">сделать практическую работу</div>
+                            <div class="task">принести ее до 20 ноября (до пятницы)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-with-task">
+                <div class="block-header">Имя Фамилия</div>
+                <div class="todo">
+                    <div class="todo-container">
+                        <div class="subject">Математика</div>
+                        <div class="tasks">
+                            <div class="task">сделать практическую работу</div>
+                            <div class="task">принести ее до 20 ноября (до пятницы)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-with-task">
+                <div class="block-header">Имя Фамилия</div>
+                <div class="todo">
+                    <div class="todo-container">
+                        <div class="subject">Математика</div>
+                        <div class="tasks">
+                            <div class="task">сделать практическую работу</div>
+                            <div class="task">принести ее до 20 ноября (до пятницы)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-with-task">
+                <div class="block-header">Имя Фамилия</div>
+                <div class="todo">
+                    <div class="todo-container">
+                        <div class="subject">Математика</div>
+                        <div class="tasks">
+                            <div class="task">сделать практическую работу</div>
+                            <div class="task">принести ее до 20 ноября (до пятницы)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Кнопка для добавления дз-->
+            <div class="btn" onclick="">
+                +
+            </div>
+
+            <!--Модальное окно-->
+            <div class="popup open">
+                <div class="block-header">
+                    <span>Добавить задание</span>
+                    <span>&#10006;</span>
+                </div>
+                <div class="block-inputs">
+                    <form action="" method="post">
+                        <input class="subject" type="text" placeholder="Название предмета">
+                        <input type="text" placeholder="Задание">
+                        <a class="add-input">Добавить поле</a>
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
+
+        
     </div>
     <script src="js/dist/menu.dev.js"></script>
 </body>
