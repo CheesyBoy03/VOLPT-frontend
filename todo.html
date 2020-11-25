@@ -84,7 +84,7 @@
             </div>
         
             <!--Кнопка для добавления дз-->
-            <div class="btn" onclick="">
+            <div class="btn" onclick="open_menu()">
                 +
             </div>
 
@@ -92,7 +92,7 @@
             <div class="popup open">
                 <div class="block-header">
                     <span>Добавить задание</span>
-                    <span>&#10006;</span>
+                    <div class="close-window"><span onclick="close_window()">&#10006;</span></div>
                 </div>
                 <div class="block-inputs">
                     <form action="" method="post">
@@ -108,5 +108,6 @@
         
     </div>
     <script src="js/dist/menu.dev.js"></script>
+    <script src="js/dist/btn.dev.js"></script>
 </body>
 </html>

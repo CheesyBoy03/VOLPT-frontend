@@ -115,6 +115,9 @@ body {
 .content-container .popup .block-header span {
   color: #f4f4f4;
 }
+.content-container .popup .block-header .close-window:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 500px) {
   .content-container .popup .block-header {
     font-size: 28px;
