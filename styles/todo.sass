@@ -32,14 +32,16 @@
         border-radius: 50%
         width: 7vh
         height: 7vh
-        min-height: 70px
-        min-width: 70px
+        min-height: 60px
+        min-width: 60px
+        max-width: 70px
+        max-height: 70px
         background-color: $mainColor
         position: fixed
         bottom: 50px
         right: 15%
         color: $fontHeaderColor
-        font-size: 64px
+        font-size: 56px
         display: flex
         justify-content: center
         align-items: center
@@ -48,6 +50,8 @@
         @media screen and ( max-width: 1024px )
             right: 20px
             bottom: 20px
+        @media screen and ( max-width: 500px )
+            font-size: 16
     
     /*      МОДАЛЬНОЕ ОКНО        */
     .popup
@@ -84,8 +88,10 @@
         .block-inputs
             width: 100%
             height: 100%
-            
+            margin: auto
+            //border: 1px solid red
             form
+                //border: 1px solid red
                 width: 80%
                 margin: auto
                 height: 60%
@@ -99,14 +105,24 @@
                     margin-top: 20px
                     padding-left: 20px
                     outline: none
-                button, a
+                button, div
                     @extend input
-
-                    .add-input
-                        background-color: $mainColor
+                .add-input
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    //background-color: $color
+                    //color: $fontHeaderColor
+                    border: 1px solid
+                    &:hover
+                        cursor: pointer
+                .submit-btn
+                        background-color: $activeColor
                         color: $fontHeaderColor
-                    .submit-btn
-                        background-color: $activeColor  
+                        border: none
+                        font-size: 18px
+                        &:hover
+                            cursor: pointer
                 a
                     display: flex
                     justify-content: center

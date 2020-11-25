@@ -89,7 +89,7 @@
             </div>
 
             <!--Модальное окно-->
-            <div class="popup open">
+            <div class="popup">
                 <div class="block-header">
                     <span>Добавить задание</span>
                     <div class="close-window"><span onclick="close_window()">&#10006;</span></div>
@@ -98,7 +98,7 @@
                     <form action="" method="post">
                         <input class="subject" type="text" placeholder="Название предмета">
                         <input type="text" placeholder="Задание">
-                        <a class="add-input">Добавить поле</a>
+                        <div class="add-input" onclick="add_input()">Добавить поле</div>
                         <button type="submit" class="submit-btn">Отправить</button>
                     </form>
                 </div>
@@ -108,6 +108,6 @@
         
     </div>
     <script src="js/dist/menu.dev.js"></script>
-    <script src="js/dist/btn.dev.js"></script>
+    <script src="js/dist/popup.dev.js"></script>
 </body>
 </html>

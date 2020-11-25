@@ -69,14 +69,16 @@ body {
   border-radius: 50%;
   width: 7vh;
   height: 7vh;
-  min-height: 70px;
-  min-width: 70px;
+  min-height: 60px;
+  min-width: 60px;
+  max-width: 70px;
+  max-height: 70px;
   background-color: #0D1321;
   position: fixed;
   bottom: 50px;
   right: 15%;
   color: #f4f4f4;
-  font-size: 64px;
+  font-size: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +90,11 @@ body {
   .content-container .btn {
     right: 20px;
     bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-container .btn {
+    font-size: 16;
   }
 }
 .content-container .popup {
@@ -136,6 +143,7 @@ body {
 .content-container .popup .block-inputs {
   width: 100%;
   height: 100%;
+  margin: auto;
 }
 .content-container .popup .block-inputs form {
   width: 80%;
@@ -145,7 +153,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-.content-container .popup .block-inputs form input, .content-container .popup .block-inputs form button, .content-container .popup .block-inputs form a {
+.content-container .popup .block-inputs form input, .content-container .popup .block-inputs form button, .content-container .popup .block-inputs form div {
   height: 40px;
   border-radius: 10px;
   border: 1px solid;
@@ -153,12 +161,23 @@ body {
   padding-left: 20px;
   outline: none;
 }
-.content-container .popup .block-inputs form button .add-input, .content-container .popup .block-inputs form a .add-input {
-  background-color: #0D1321;
-  color: #f4f4f4;
+.content-container .popup .block-inputs form .add-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
 }
-.content-container .popup .block-inputs form button .submit-btn, .content-container .popup .block-inputs form a .submit-btn {
+.content-container .popup .block-inputs form .add-input:hover {
+  cursor: pointer;
+}
+.content-container .popup .block-inputs form .submit-btn {
   background-color: #34AADC;
+  color: #f4f4f4;
+  border: none;
+  font-size: 18px;
+}
+.content-container .popup .block-inputs form .submit-btn:hover {
+  cursor: pointer;
 }
 .content-container .popup .block-inputs form a {
   display: flex;
